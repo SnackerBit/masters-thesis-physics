@@ -1,0 +1,5 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'SVD.blg'
+[59] biber:340> INFO - === So Aug 17, 2025, 14:18:34
+[105] Utils.pm:399> ERROR - Cannot find 'SVD.bcf'!
+[105] Biber.pm:136> INFO - ERRORS: 1

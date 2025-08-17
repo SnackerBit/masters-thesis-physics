@@ -1,0 +1,19 @@
+\documentclass[crop,tikz,convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}
+\input{../../style.tex}
+\begin{document}
+	\def \openLegLength{25pt}
+	\def \tensorXDistance{40pt}
+	\begin{tikzpicture}
+		\node[tensorOrthoCenter, inner sep=0, fill=generalTensorColor] (T) at (-\openLegLength*2-\defaultDistanceEquations, 0) {$T$}; 
+		\node[] () at (-\openLegLength-\defaultDistanceEquations/2, 0) {$=$};
+		\draw[virtualLegWithoutArrows] (T) -- ++(\openLegLength, 0);
+		\draw[virtualLegWithoutArrows] (T) -- ++(-\openLegLength, 0);
+		\node[tensorOrthoCenter, inner sep=0, fill=generalTensorColor] (U) at (0, 0) {$U$};
+		\node[tensorOrthoCenter, inner sep=0, fill=generalTensorColor] (S) at (\tensorXDistance, 0) {$S$};
+		\node[tensorOrthoCenter, inner sep=0, fill=generalTensorColor] (V) at (2*\tensorXDistance, 0) {$V^*$};
+		\draw[virtualLeg] (U)+(-\openLegLength, 0) -- (U);
+		\draw[virtualLeg] (U) -- (S);
+		\draw[virtualLeg] (V) -- (S);
+		\draw[virtualLeg] (V)+(\openLegLength, 0) -- (V);
+	\end{tikzpicture}
+\end{document}

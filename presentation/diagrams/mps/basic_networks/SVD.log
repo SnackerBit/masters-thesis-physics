@@ -1,10 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.1)  17 AUG 2025 14:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.1)  17 AUG 2025 14:18
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**\expandafter\def\csname sa@internal@run\endcsname{1}\input{basic_networks_c}
-(./basic_networks_c.tex
-(/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
+**\expandafter\def\csname sa@internal@run\endcsname{1}\input{SVD}
+(./SVD.tex (/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
 Document Class: standalone 2022/10/10 v1.3b Class to compile TeX sub-files stan
 dalone
 (/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
@@ -319,7 +318,8 @@ Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 \pgffor@stack=\toks29
 \pgffor@toks=\toks30
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tintendlayer/tikz/tikz.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
@@ -358,27 +358,26 @@ zlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
 \sa@box=\box62
-runsystem(pdflatex  -shell-escape  -jobname 'basic_networks_c' '\expandafter\de
-f\csname sa@internal@run\endcsname{1}\input{basic_networks_c}')...executed.
+runsystem(pdflatex  -shell-escape  -jobname 'SVD' '\expandafter\def\csname sa@i
+nternal@run\endcsname{1}\input{SVD}')...executed.
 
 \sa@read=\read3
+ Executing command:
+pdf2svg SVD.pdf SVD.svg
 
-Executing command:
-pdf2svg basic_networks_c.pdf basic_networks_c.svg
-
-runsystem(pdf2svg basic_networks_c.pdf basic_networks_c.svg)...executed.
+runsystem(pdf2svg SVD.pdf SVD.svg)...executed.
 
 Class standalone:
-Output written on basic_networks_c.svg.
+Output written on SVD.svg.
  ) ) 
 Here is how much of TeX's memory you used:
  11676 strings out of 476129
- 244396 string characters out of 5793186
+ 244266 string characters out of 5793186
  1922975 words of memory out of 5000000
  33526 multiletter control sequences out of 15000+600000
  558069 words of font info for 36 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 117i,1n,121p,424b,90s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,1n,121p,411b,90s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 No pages of output.
 PDF statistics:
@@ -386,7 +385,10 @@ PDF statistics:
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-n input line 496.
+n input line 410.
+\classnum@=\count288
+\DOTSCASE@=\count289
+LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
 \Mathstrutbox@=\box63
@@ -665,8 +667,8 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count335
 \l__pdf_internal_box=\box70
 )
-(./basic_networks_c.aux)
-\openout1 = `basic_networks_c.aux'.
+(./SVD.aux)
+\openout1 = `SVD.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
@@ -682,8 +684,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count336
 \scratchdimen=\dimen272
@@ -705,38 +706,38 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 14.
-
+LaTeX Font Info:    Trying to load font information for U+msa on input line 7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 14.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./basic_networks_c.aux)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./SVD.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 18899 strings out of 476129
- 382889 string characters out of 5793186
- 1929975 words of memory out of 5000000
- 40555 multiletter control sequences out of 15000+600000
+ 18872 strings out of 476129
+ 382627 string characters out of 5793186
+ 1928975 words of memory out of 5000000
+ 40528 multiletter control sequences out of 15000+600000
  559768 words of font info for 44 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 121i,7n,124p,480b,664s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-Output written on basic_networks_c.pdf (1 page, 12212 bytes).
+ 121i,7n,124p,467b,942s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on SVD.pdf (1 page, 26812 bytes).
 PDF statistics:
- 16 PDF objects out of 1000 (max. 8388607)
- 10 compressed objects within 1 object stream
+ 26 PDF objects out of 1000 (max. 8388607)
+ 16 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
