@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.1)  17 AUG 2025 13:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.1)  17 AUG 2025 13:27
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -816,9 +816,9 @@ e
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-Package pgfplots info on input line 5: Using 'lua backend=false' for axis: xmod
+Package pgfplots info on input line 8: Using 'lua backend=false' for axis: xmod
 e=log unsupported (yet).
-Package pgfplots info on input line 5: Using 'lua backend=false' for axis: ymod
+Package pgfplots info on input line 8: Using 'lua backend=false' for axis: ymod
 e=log unsupported (yet).
 PGFPlots: reading {data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_cg
 .txt}
@@ -826,12 +826,12 @@ PGFPlots: reading {data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_cg
 .txt}
 PGFPlots: reading {data/gs_energy_vs_dtau_square_svd_disent_renyi_0.5_approx_cg
 .txt}
-LaTeX Font Info:    Trying to load font information for U+msa on input line 18.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 21.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 21.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -846,19 +846,19 @@ L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 30485 strings out of 476129
- 772330 string characters out of 5793186
+ 30483 strings out of 476129
+ 772338 string characters out of 5793186
  1934975 words of memory out of 5000000
- 51993 multiletter control sequences out of 15000+600000
+ 51991 multiletter control sequences out of 15000+600000
  562424 words of font info for 53 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 121i,10n,124p,820b,1956s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 121i,10n,124p,820b,1954s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
-Output written on different_methods_j.pdf (1 page, 49038 bytes).
+Output written on different_methods_j.pdf (1 page, 48777 bytes).
 PDF statistics:
  36 PDF objects out of 1000 (max. 8388607)
  22 compressed objects within 1 object stream
