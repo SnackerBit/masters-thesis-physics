@@ -11,8 +11,9 @@
 	\def\defaultDistanceEquationsTemp{0.9*\defaultDistanceEquations}
 	\begin{tikzpicture}
 		
+		\def\buffer{2pt}
 		\begin{pgfonlayer}{bg}
-			\draw[color=white, fill=white] ({-\openLegLength}, -\tensorWidthMPS/2-\lineWidthThin/2) -- ({9*\openLegLength+4*\defaultDistanceEquationsTemp+3*\extraEquationDistance+\dotdotEquationDistance+\tensorDistance}, -\tensorWidthMPS/2-\lineWidthThin/2) -- ({9*\openLegLength+4*\defaultDistanceEquationsTemp+3*\extraEquationDistance+\dotdotEquationDistance+\tensorDistance}, 153pt) --  ({-\openLegLength}, 153pt) -- cycle;
+			\draw[color=white, fill=white] ({-\openLegLength-\buffer}, -\tensorWidthMPS/2-\lineWidthThin/2-\buffer) -- ({9*\openLegLength+4*\defaultDistanceEquationsTemp+3*\extraEquationDistance+\dotdotEquationDistance+\tensorDistance+\buffer}, -\tensorWidthMPS/2-\lineWidthThin/2-\buffer) -- ({9*\openLegLength+4*\defaultDistanceEquationsTemp+3*\extraEquationDistance+\dotdotEquationDistance+\tensorDistance+\buffer}, 153pt+\buffer) --  ({-\openLegLength-\buffer}, 153pt+\buffer) -- cycle;
 		\end{pgfonlayer}
 		
 		\node[tensorOrthoCenterSmall] (T11) at (0, 0) {};
