@@ -1,0 +1,103 @@
+\documentclass[crop,tikz,convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}
+\input{../../style.tex}
+\begin{document}
+	% error bars
+	\pgfplotsset{
+		errorBars/.style={
+			error bars/error bar style={
+				line width=1.2pt,
+			},
+			error bars/y dir=both,
+			error bars/y explicit,
+			error bars/error mark=none,
+		}
+	}
+	\begin{tikzpicture}
+		% Draw background
+		\begin{pgfonlayer}{bg}
+			\draw[color=white, fill=white] (-46pt, -27pt) -- (\singleFigureWidth+150pt, -27pt) -- (\singleFigureWidth+150pt, \singleFigureHeight+2pt) -- (-46pt, \singleFigureHeight+2pt) -- cycle;
+		\end{pgfonlayer}
+		% Draw plots
+		\begin{axis}[xlabel=$N$, ylabel={$a$}, grid=none, grid style={gray!20}, every axis plot/.append style={very thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, legend style={at={(0.97,0.9)}, anchor=north east, font=\small, nodes={scale=\legendscale, transform shape}, label={[font=\small]above:{MPS DMRG}}}, legend columns=2, xmin=52, xmax=902, ymin=-3.659, ymax=-3.63, every axis plot/.append style={errorBars}, legend cell align={left}, xtick={200, 400, 600, 800}, ytick={-3.65, -3.64}, yticklabels={$-3.65$, $-3.64$}]
+			%	
+			\addplot[color = 7blue1]%,
+			%error bars/.cd,
+			%y dir=both,
+			%y explicit]
+			table[x=N, y=a_tenpy_chi_16, y error=a_error_tenpy_chi_16, col sep=space]{data/gs_search_a_fit_boundary_vs_system_size_rolling_window.txt};
+			%
+			\addplot[color = 7blue2]%,
+			%error bars/.cd,
+			%y dir=both,
+			%y explicit]
+			table[x=N, y=a_tenpy_chi_32, y error=a_error_tenpy_chi_32, col sep=space]{data/gs_search_a_fit_boundary_vs_system_size_rolling_window.txt};
+			%
+			\addplot[color = 7blue3]%,
+			%error bars/.cd,
+			%y dir=both,
+			%y explicit]
+			table[x=N, y=a_tenpy_chi_64, y error=a_error_tenpy_chi_64, col sep=space]{data/gs_search_a_fit_boundary_vs_system_size_rolling_window.txt};
+			%
+			\addplot[color = 7blue4]%,
+			%error bars/.cd,
+			%y dir=both,
+			%y explicit]
+			table[x=N, y=a_tenpy_chi_128, y error=a_error_tenpy_chi_128, col sep=space]{data/gs_search_a_fit_boundary_vs_system_size_rolling_window.txt};
+			%
+			\addplot[color = 7blue5]%,
+			%error bars/.cd,
+			%y dir=both,
+			%y explicit]
+			table[x=N, y=a_tenpy_chi_256, y error=a_error_tenpy_chi_256, col sep=space]{data/gs_search_a_fit_boundary_vs_system_size_rolling_window.txt};
+			%
+			\addplot[color = 7blue6]%,
+			%error bars/.cd,
+			%y dir=both,
+			%y explicit]
+			table[x=N, y=a_tenpy_chi_512, y error=a_error_tenpy_chi_512, col sep=space]{data/gs_search_a_fit_boundary_vs_system_size_rolling_window.txt};
+			%
+			\addplot[color = 7blue7]%,
+			%error bars/.cd,
+			%y dir=both,
+			%y explicit]
+			table[x=N, y=a_tenpy_chi_1024, y error=a_error_tenpy_chi_1024, col sep=space]{data/gs_search_a_fit_boundary_vs_system_size_rolling_window.txt};
+			%
+			\legend{${\chi = 16}$, ${\chi = 32}$, ${\chi = 64}$, ${\chi = 128}$, ${\chi = 256}$, ${\chi = 512}$, ${\chi = 1024}$}
+			% empty legend entries
+			\addlegendimage{empty legend}\addlegendentry{}
+			\addlegendimage{empty legend}\addlegendentry{}
+			\addlegendimage{empty legend}\addlegendentry{}
+		\end{axis}
+		\begin{axis}[every axis plot/.append style={thick}, scale only axis, height=\singleFigureHeight, width=\singleFigureWidth, legend style={at={(0.42,0.9)}, anchor=north east, font=\small, nodes={scale=\legendscale, transform shape}, label={[font=\small]above:{YB-isoTPS}}}, legend columns=1, xmin=52, xmax=902, ymin=-3.659, ymax=-3.63, clip mode=individual, legend cell align={left}, yticklabels=\empty, every axis plot/.append style={errorBars}, xtick={200, 400, 600, 800}, ytick={-3.65, -3.64}, xticklabels=\empty, yticklabels=\empty]
+			%
+			\addplot[color = 5red2]%,
+			%error bars/.cd,
+			%y dir=both,
+			%y explicit]
+			table[x=N, y=a_isoTPS_D_3, y error=a_error_isoTPS_D_3, col sep=space]{data/gs_search_a_fit_boundary_vs_system_size_rolling_window.txt};
+			\addlegendentry{${D = 3}$}
+			%
+			\addplot[color = 5red3]%,
+			%error bars/.cd,
+			%y dir=both,
+			%y explicit]
+			table[x=N, y=a_isoTPS_D_4, y error=a_error_isoTPS_D_4, col sep=space]{data/gs_search_a_fit_boundary_vs_system_size_rolling_window.txt};
+			\addlegendentry{${D = 4}$}
+			%
+			\addplot[color = 5red4]%,
+			%error bars/.cd,
+			%y dir=both,
+			%y explicit]
+			table[x=N, y=a_isoTPS_D_5, y error=a_error_isoTPS_D_5, col sep=space]{data/gs_search_a_fit_boundary_vs_system_size_rolling_window.txt};
+			\addlegendentry{${D = 5}$}
+			%
+			\addplot[color = 5red5]%,
+			%error bars/.cd,
+			%y dir=both,
+			%y explicit]
+			table[x=N, y=a_isoTPS_D_6, y error=a_error_isoTPS_D_6, col sep=space]{data/gs_search_a_fit_boundary_vs_system_size_rolling_window.txt};
+			\addlegendentry{${D = 6}$}
+			%
+		\end{axis}%
+	\end{tikzpicture}%
+\end{document}
