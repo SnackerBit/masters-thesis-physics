@@ -35,26 +35,12 @@
 		\node[] at (0, \tensorWidthMPS/2+1.5*\defaultTextOffset) {$\Lambda^{[n]}$};
 		\node[] at (\tensorDistanceMPS, \tensorWidthMPS/2+1.5*\defaultTextOffset) {$B^{[n+1]}$};
 		
-		\node[] () at (2*\tensorDistanceMPS-\tensorWidthMPS/2+\equationDistance/2, -\opOffset+\tensorWidthMPS/2+\defaultTextOffset) {$=$};
+		\node[] () at (2*\tensorDistanceMPS-\tensorWidthMPS/2+\equationDistance/2, -\opOffset+\tensorWidthMPS/2+\defaultTextOffset) {$\approx$};
 		
-		\def\blobPosX{2*\tensorDistanceMPS-\tensorWidthMPS/2+\equationDistance+\blobhalfwidth+\tensorDistanceMPS-\tensorWidthMPS}
+		\def\blobPosX{2*\tensorDistanceMPS-\tensorWidthMPS/2+\equationDistance}
 		\def\blobPosY{-\opOffset/2+\defaultTextOffset}
-		\node[draw, ellipse, minimum width={2*\blobhalfwidth}, minimum height={\blobhalfheight*2}, line width=\defaultLineWidth, draw=borderColor, fill=generalTensorColor,outer sep=0] (theta) at ({\blobPosX}, \blobPosY) {};
-		\draw[virtualLegSmall] (theta)+({-\blobhalfwidth-\tensorDistanceMPS+\tensorWidthMPS}, 0) -- (theta);
-		\draw[virtualLegSmall] (theta)+({\blobhalfwidth+\tensorDistanceMPS-\tensorWidthMPS}, 0) -- (theta);
 		
-		\begin{pgfonlayer}{bg}
-			\draw[physicalLegSmall] ({\blobPosX-\tensorDistanceMPS/2}, \blobPosY-\opOffset+\tensorWidthMPS/2) -- ++(0, \opOffset-\tensorWidthMPS);
-			\draw[physicalLegSmallWithoutArrows] ({\blobPosX-\tensorDistanceMPS/2}, \blobPosY-\tensorWidthMPS/2)  -- ++(0, \tensorWidthMPS/2);
-			\draw[physicalLegSmall] ({\blobPosX+\tensorDistanceMPS/2}, \blobPosY-\opOffset+\tensorWidthMPS/2) -- ++(0, \opOffset-\tensorWidthMPS);
-			\draw[physicalLegSmallWithoutArrows] ({\blobPosX+\tensorDistanceMPS/2}, \blobPosY-\tensorWidthMPS/2)  -- ++(0, \tensorWidthMPS/2);
-		\end{pgfonlayer}
-		
-		\node[] at ({\blobPosX}, \blobPosY+\tensorWidthMPS/2+1.5*\defaultTextOffset) {$\theta^{[n, n+1]}$};
-		
-		\node[] () at ({\blobPosX+\blobhalfwidth+\tensorDistanceMPS-\tensorWidthMPS+\equationDistance/2}, -\opOffset+\tensorWidthMPS/2+\defaultTextOffset) {$\approx$};
-		
-		\def\AfinalposX{\blobPosX+\blobhalfwidth+2*\tensorDistanceMPS-3*\tensorWidthMPS/2+\equationDistance}
+		\def\AfinalposX{\blobPosX+\tensorDistanceMPS-\tensorWidthMPS/2}
 		\def\AfinalposY{\blobPosY}
 		
 		\node[tensorPhysicalMPSCanonical] (A1p) at ({\AfinalposX}, \AfinalposY) {};

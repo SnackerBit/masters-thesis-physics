@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.1)  17 AUG 2025 08:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.1)  17 AUG 2025 08:40
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**\expandafter\def\csname sa@internal@run\endcsname{1}\input{mps_TEBD_b_b}
-(./mps_TEBD_b_b.tex
+**\expandafter\def\csname sa@internal@run\endcsname{1}\input{mps_TEBD_b_ac}
+(./mps_TEBD_b_ac.tex
 (/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
 Document Class: standalone 2022/10/10 v1.3b Class to compile TeX sub-files stan
 dalone
@@ -319,7 +319,7 @@ Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 \pgffor@stack=\toks29
 \pgffor@toks=\toks30
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.er/tikz/tikz.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikayer/tikz/tikz.code.tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
@@ -358,27 +358,27 @@ zlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
 \sa@box=\box62
-runsystem(pdflatex  -shell-escape  -jobname 'mps_TEBD_b_b' '\expandafter\def\cs
-name sa@internal@run\endcsname{1}\input{mps_TEBD_b_b}')...executed.
+runsystem(pdflatex  -shell-escape  -jobname 'mps_TEBD_b_ac' '\expandafter\def\c
+sname sa@internal@run\endcsname{1}\input{mps_TEBD_b_ac}')...executed.
 
 \sa@read=\read3
 
 Executing command:
-pdf2svg mps_TEBD_b_b.pdf mps_TEBD_b_b.svg
+pdf2svg mps_TEBD_b_ac.pdf mps_TEBD_b_ac.svg
 
-runsystem(pdf2svg mps_TEBD_b_b.pdf mps_TEBD_b_b.svg)...executed.
+runsystem(pdf2svg mps_TEBD_b_ac.pdf mps_TEBD_b_ac.svg)...executed.
 
 Class standalone:
-Output written on mps_TEBD_b_b.svg.
+Output written on mps_TEBD_b_ac.svg.
  ) ) 
 Here is how much of TeX's memory you used:
  11676 strings out of 476129
- 244356 string characters out of 5793186
+ 244366 string characters out of 5793186
  1922975 words of memory out of 5000000
  33526 multiletter control sequences out of 15000+600000
  558069 words of font info for 36 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 117i,1n,121p,420b,90s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,1n,121p,421b,90s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 No pages of output.
 PDF statistics:
@@ -386,7 +386,7 @@ PDF statistics:
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-eX Info: Redefining \ldots on input line 496.
+: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
 \Mathstrutbox@=\box63
@@ -665,8 +665,8 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count335
 \l__pdf_internal_box=\box70
 )
-(./mps_TEBD_b_b.aux)
-\openout1 = `mps_TEBD_b_b.aux'.
+(./mps_TEBD_b_ac.aux)
+\openout1 = `mps_TEBD_b_ac.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
@@ -718,28 +718,30 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./mps_TEBD_b_b.aux)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./mps_TEBD_b_ac.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 18945 strings out of 476129
- 384350 string characters out of 5793186
- 1932975 words of memory out of 5000000
- 40601 multiletter control sequences out of 15000+600000
+ 18929 strings out of 476129
+ 383957 string characters out of 5793186
+ 1933975 words of memory out of 5000000
+ 40585 multiletter control sequences out of 15000+600000
  559768 words of font info for 44 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 121i,7n,124p,476b,993s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 121i,7n,124p,477b,1001s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on mps_TEBD_b_b.pdf (1 page, 35819 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on mps_TEBD_b_ac.pdf (1 page, 52122 bytes).
 PDF statistics:
- 31 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
+ 41 PDF objects out of 1000 (max. 8388607)
+ 25 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
