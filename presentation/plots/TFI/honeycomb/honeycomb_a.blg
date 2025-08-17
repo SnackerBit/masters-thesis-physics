@@ -1,5 +1,5 @@
-[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'honeycomb_a.blg'
-[59] biber:340> INFO - === Di Jul 30, 2024, 18:17:09
-[129] Utils.pm:398> ERROR - Cannot find 'honeycomb_a.bcf'!
-[129] Biber.pm:135> INFO - ERRORS: 1
+[57] biber:340> INFO - === So Aug 17, 2025, 13:33:49
+[105] Utils.pm:399> ERROR - Cannot find 'honeycomb_a.bcf'!
+[105] Biber.pm:136> INFO - ERRORS: 1
