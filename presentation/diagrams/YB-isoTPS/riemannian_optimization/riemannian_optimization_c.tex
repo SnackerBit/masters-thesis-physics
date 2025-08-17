@@ -27,6 +27,12 @@
 	\def\equationDistance{1.0*\defaultDistanceEquations}
 	\def\xOffsetSecondPicture{1.8*\distance+\equationDistance}
 	\begin{tikzpicture}
+		% Draw background
+		\def\buffer{2pt}
+		\begin{pgfonlayer}{bg}
+			\draw[color=white, fill=white] (-\buffer, -\buffer) -- (200pt+\buffer, -\buffer) -- (200pt+\buffer, 108pt+\buffer) -- (-\buffer, 108pt+\buffer) -- cycle;
+		\end{pgfonlayer}
+		
 		% First diagram
 		\draw[thick] (0, 0) to [out=25, in=-130] (0.4*\distance, 0.25*\distance) to[out=50, in=-180] ++(0.5*\distance, 0.3*\distance);
 		\draw[thick, fill=white] (0, 0) to[out=90, in=180] (\distance/2, \halfCircleHeight/2) to [out=0, in=90] (\distance, 0)

@@ -19,7 +19,7 @@
 	\def\tangentSpaceLengthOrth{26pt*\distanceScale*1.1}
 	\def\UkPosX{0.75*\distance}
 	\def\UkPosY{0.65*\halfCircleHeight}
-	\def\UkpPosX{1.24*\distance}
+	\def\UkpPosX{1.4*\distance}
 	\def\UkpPosY{0.65*\halfCircleHeight-0.25*\distance}
 	\definecolor{colorA}{rgb}{0.0, 0.6, 0.0}
 	\definecolor{colorB}{rgb}{0.9, 0.0, 0.0}
@@ -27,6 +27,12 @@
 	\def\equationDistance{1.0*\defaultDistanceEquations}
 	\def\xOffsetSecondPicture{1.8*\distance+\equationDistance}
 	\begin{tikzpicture}
+		% Draw background
+		\def\buffer{2pt}
+		\begin{pgfonlayer}{bg}
+			\draw[color=white, fill=white] (-\buffer, -\buffer) -- (200pt+\buffer, -\buffer) -- (200pt+\buffer, 108pt+\buffer) -- (-\buffer, 108pt+\buffer) -- cycle;
+		\end{pgfonlayer}
+		
 		% First diagram
 		\draw[thick] (0, 0) to [out=25, in=-130] (0.4*\distance, 0.25*\distance) to[out=50, in=-180] ++(0.5*\distance, 0.3*\distance);
 		\draw[thick, fill=white] (0, 0) to[out=90, in=180] (\distance/2, \halfCircleHeight/2) to [out=0, in=90] (\distance, 0)
@@ -37,7 +43,7 @@
 		\node[circle, minimum size=\pointSize, fill=black, outer sep=0, inner sep=0] (Uk) at (\UkPosX, \UkPosY) {};
 		\node[circle, minimum size=\pointSize, fill=black, outer sep=0, inner sep=0] (Ukp) at (\UkpPosX, \UkpPosY) {};
 		
-		\draw[thick, retractionColor, -latex] (Uk) to[out=\gradientAngleA, in=130] ++(0.18*\distance, -0.08*\distance) to[out=-50, in=180] ++(0.16*\distance, -0.13*\distance) to[out=0, in=150] ++(0.15*\distance, -0.04*\distance);
+		\draw[thick, retractionColor, -latex] (Uk) to[out=\gradientAngleA, in=130] ++(0.18*\distance, -0.08*\distance) to[out=-50, in=180] ++(0.16*\distance, -0.11*\distance) to[out=0, in=130] ++(0.29*\distance, -0.03*\distance);
 		
 		\draw[thick, -latex, colorA] (Uk) -- ++({cos(\gradientAngleA)*\gradientLengthA}, {sin(\gradientAngleA)*\gradientLengthA});
 		\draw[thick, colorA] ({\UkPosX+cos(\tangentSpaceAngleA)*\tangentSpaceLength/2}, {\UkPosY+sin(\tangentSpaceAngleA)*\tangentSpaceLength/2}) --
@@ -50,7 +56,7 @@
 		\node[color=colorA] () at (1.25*\distance, 0.75*\distance) {$\xi_k$};
 		
 		\node[] () at (\UkPosX-0.07*\distance, \UkPosY-0.07*\distance) {$U_k$};
-		\node[] () at (\UkpPosX+0.1*\distance, \UkpPosY-0.1*\distance) {$U_{k+1}$};
+		\node[] () at (\UkpPosX-0.05*\distance, \UkpPosY-0.1*\distance) {$U_{k+1}$};
 		
 		\node[color=retractionColor] () at (0.94*\distance, 0.46*\distance) {$R_\xi(\alpha)$};
 		
