@@ -89,12 +89,12 @@
 	
 		% Open Legs
 		\begin{pgfonlayer}{bg}
-			\draw[virtualLeg](A2)+({(-\tensorDistanceMPS+\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- (A2);
+			\draw[virtualLegSmall](A2)+({(-\tensorDistanceMPS+\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- (A2);
 			\draw[virtualLeg](A2cc)+({(-\tensorDistanceMPS+\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- (A2cc);
-			\draw[virtualLegWithoutArrows] (A2) -- ++({(-\tensorDistanceMPS+\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- ++(0, -\braketDistanceMPS) -- (A2cc);
-			\draw[virtualLeg](A7)+({(\tensorDistanceMPS-\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- (A7);
-			\draw[virtualLeg](A7cc)+({(\tensorDistanceMPS-\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- (A7cc);
-			\draw[virtualLegWithoutArrows] (A7) -- ++({(\tensorDistanceMPS-\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- ++(0, -\braketDistanceMPS) -- (A7cc);
+			\draw[virtualLegSmallWithoutArrows] (A2) -- ++({(-\tensorDistanceMPS+\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- ++(0, -\braketDistanceMPS) -- (A2cc);
+			\draw[virtualLegSmall](A7)+({(\tensorDistanceMPS-\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- (A7);
+			\draw[virtualLegSmall](A7cc)+({(\tensorDistanceMPS-\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- (A7cc);
+			\draw[virtualLegSmallWithoutArrows] (A7) -- ++({(\tensorDistanceMPS-\tensorWidthMPS/2)*\openLegMultiplierMPS}, 0) -- ++(0, -\braketDistanceMPS) -- (A7cc);
 		\end{pgfonlayer}
 	\end{tikzpicture}
 \end{document}
