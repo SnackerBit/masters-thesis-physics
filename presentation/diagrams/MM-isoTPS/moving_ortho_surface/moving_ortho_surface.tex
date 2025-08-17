@@ -5,6 +5,12 @@
 	\def\physicalLegLength{\physicalLegLengthSmall}
 	\def\openLegLength{(\tensorDistance-\smallTensorWidth)}
 	\begin{tikzpicture}
+		% Draw background
+		\def\buffer{2pt}
+		\begin{pgfonlayer}{bg}
+			\draw[color=white, fill=white] ({-\openLegLength-\buffer}, -\smallTensorWidth/2-\buffer) -- ({4*\tensorDistance+5*\openLegLength+2*\defaultDistanceEquations+\buffer}, -\smallTensorWidth/2-\buffer) -- ({4*\tensorDistance+5*\openLegLength+2*\defaultDistanceEquations+\buffer}, 4*\tensorDistance+35pt) -- ({-\openLegLength-\buffer}, 4*\tensorDistance+35pt) -- cycle;
+		\end{pgfonlayer}
+		
 		\node[tensorOrthoCenterSmall] (T11) at (0, 0) {};
 		\node[tensorPhysicalSmall] (T12) at (0, \tensorDistance) {};
 		\node[tensorPhysicalSmall] (T13) at (0, 2*\tensorDistance) {};
